@@ -1,0 +1,82 @@
+.btn-action {
+    position: relative;
+    display: inline-block;
+    padding: 11px 45px;
+    border: 2px solid #FD562A;
+    border-radius: 27px;
+    font-family: 'Gilroy-Bold';
+    transition: color 0.4s linear;
+    overflow: hidden;
+}
+
+.btn-action:hover {
+    color: #FFF;
+}
+
+.btn-action:hover::before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-duration: alternate;
+    animation-duration: alternate;
+}
+
+.btn-action:hover::after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-duration: alternate;
+    animation-duration: alternate;
+}
+
+.btn-action::before,
+.btn-action::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FD562A;
+    z-index: -1;
+}
+
+.btn-action::before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.btn-action::after {
+    right: -20px;
+    transform: translate(50%, -50%);
+}
+
+@keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
