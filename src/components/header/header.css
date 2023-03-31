@@ -153,8 +153,7 @@
     }
     
     .header .header__right .main-nav .menu li a {
-        padding: 15px 0;
-        padding-left: 40px;
+        padding: 0 15px;
     }
     
     .header .header__right .main-nav .menu ul li:last-child {
