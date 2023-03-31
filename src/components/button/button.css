@@ -80,3 +80,21 @@
         height: 375px;
     }
 }
+
+.btn-action.style-2 {
+    padding: 20px 48px;
+    border: none;
+    background-color: #FD562A;
+    border-radius: 33px;
+    z-index: 1;
+}
+
+.btn-action.style-2:hover {
+    color: #FD562A;
+    transition-delay: 0.5s;
+}
+
+.btn-action.style-2::before,
+.btn-action.style-2::after {
+    background-color: #FFF;
+}
