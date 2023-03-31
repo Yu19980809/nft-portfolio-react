@@ -7,7 +7,7 @@ import item from "../../assets/data/item";
 const Slider = () => {
     const [ dataText ] = useState({
         subTitle: 'We are Monteno NFT',
-        title: 'Collect Necxt Generation NFTs Today',
+        title: 'Collect Next Generation NFTs Today',
         desc: 'Sed ut perspiciates unde omnis iste natus error sit voluptatem accusantium'
     })
 

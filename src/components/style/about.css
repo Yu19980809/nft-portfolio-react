@@ -1,0 +1,42 @@
+.section-about {
+    padding: 170px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-about {
+        padding: 100px 0;
+    }
+}
+
+.section-about .group-image {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-about .group-image {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-about .group-image {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.section-about .group-image .left {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .section-about .group-image .left {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+}
+
+.section-about .group-image .right .item:nth-child(1) {
+    margin-bottom: 30px;
+}
